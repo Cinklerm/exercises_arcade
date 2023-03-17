@@ -94,9 +94,11 @@ class MyGame(arcade.Window):
         for cercle in self.liste_cercles:
             dist = self.calculer_distance(x, cercle.x, y, cercle.y)
             if dist < cercle.rayon:
-                if (button == 1):
+                # bouton droit
+                if (button == 4):
                     cercle.color = random.choice(COULEURS)
-                elif (button == 4):
+                # bouton gauche
+                elif (button == 1):
                     self.liste_cercles.remove(cercle)
                 break
 
