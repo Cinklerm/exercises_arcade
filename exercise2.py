@@ -89,7 +89,6 @@ class MyGame(arcade.Window):
             cercle.draw()
 
     def on_mouse_press(self, x: int, y: int, button: int, modifiers: int):
-        print(modifiers)
         # On trouve si nous avons fait clique sur un cercle.
         # Si la distance entre le souris et le centre de cercle est moins que le rayon de ce cercle, nous avons le clique
         for cercle in self.liste_cercles:
